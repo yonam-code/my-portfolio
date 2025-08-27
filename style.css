@@ -153,38 +153,42 @@ ul {
 
 /* MODAL STYLING */
 .modal {
+  display: none; 
   position: fixed;
-  top: 0;
-  right: 0;
-  width: auto;
-  height: 100%;
-  background: rgba(0,0,0,0.0); /* transparent overlay disabled */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
   z-index: 2000;
 }
 
 .modal.active {
+  display: flex;   /* flex centers it */
   opacity: 1;
   visibility: visible;
 }
 
 .modal-content {
-  position: absolute;
-  top: 80px;           /* push it below the navbar */
-  right: 20px;         /* margin from right edge */
   background: white;
   border-radius: 15px;
   padding: 25px;
-  width: 350px;        /* fixed neat width */
+  width: 90%;        /* responsive width */
+  max-width: 450px;  /* nice limit */
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-
-  transform: translateX(120%); /* start offscreen to the right */
-  transition: transform 0.4s ease;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
 }
+
+.modal.active .modal-content {
+  transform: scale(1); /* zoom-in effect */
+}
+
 
 .modal.active .modal-content {
   transform: translateX(0); /* slide into view */
