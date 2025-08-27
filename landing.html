@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julius De Lara - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <button onclick="openModal('educationModal')">Education</button>
+    <button onclick="openModal('certModal')">Certifications</button>
+    <button onclick="openModal('projModal')">Projects</button>
+  </nav>
+
+
+<div class="container">
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="julius2x2.png" alt="Profile Photo" class="profile-img">
+
+    <div class="contact-info">
+      <p><img src="whatsapp.png" alt="WhatsApp" class="icon"> 09636996688</p>
+      <p><img src="gmail.png" alt="Gmail" class="icon"> delarajjae@gmail.com</p>
+      <p><img src="facebook.png" alt="Facebook" class="icon"> Julius De Lara</p>
+      <p><img src="map.png" alt="Location" class="icon"> Sto. Tomas, Batangas</p>
+    </div>
+  </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="right">
+      <h1>Hello!</h1>
+      <p class="intro">
+        My name is <b>Julius C. De Lara</b>. Motivated and hardworking IT student with a strong foundation in 
+        software development and a growing interest in business analysis. Familiar with Python, C++, HTML, CSS, 
+        and basic data handling, with experience in troubleshooting Windows systems and maintaining IT infrastructure 
+        using CISCO Packet Tracer. Passionate about using technology to improve business processes, support data-driven 
+        decisions, and enhance operational efficiency.
+      </p>
+
+      <!-- WORK EXPERIENCE -->
+      <h2>WORK EXPERIENCE</h2>
+      <ul>
+        <li>Worked as a support staff at the Mayor’s Office, City Hall of Sto. Tomas, Batangas, assisting with administrative tasks and public service coordination.</li>
+      </ul>
+
+      <!-- SKILLS -->
+      <h2>SKILLS</h2>
+      <div class="skills">
+        <div class="skill"><img src="html.png" alt="HTML"><p>HTML</p></div>
+        <div class="skill"><img src="css.png" alt="CSS"><p>CSS</p></div>
+        <div class="skill"><img src="python.png" alt="Python"><p>Python</p></div>
+        <div class="skill"><img src="xampp.png" alt="Xampp"><p>Xampp</p></div>
+        <div class="skill"><img src="php.png" alt="PHP"><p>PHP</p></div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <h2>SOFT SKILLS</h2>
+      <ul>
+        <li>Communication</li>
+        <li>Critical Thinking</li>
+        <li>Problem-Solving</li>
+        <li>Time Management</li>
+        <li>Teamwork</li>
+      </ul>
+
+      <!-- LANGUAGES -->
+      <h2>LANGUAGES</h2>
+      <ul>
+        <li>English</li>
+        <li>Filipino</li>
+      </ul>
+
+      <!-- REFERENCE -->
+      <h2>REFERENCE</h2>
+      <p>
+        Jurry R. Malabanan – Instructor at BSU JPLPC-MALVAR TNEU  
+        📞 09184205940
+      </p>
+
+  
+
+
+  <!-- MODALS -->
+  <div id="educationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('educationModal')">&times;</span>
+      <h2>EDUCATION</h2>
+      <ul>
+        <li><b>Bachelor of Science in Information Technology</b> (2023 – 2027)</li>
+        <li><b>Senior High School</b> – Lilyrose Foundation Inc. (2021 – 2023)</li>
+        <li><b>Pantay Integrated High School</b> (2017 – 2021)</li>
+        <li><b>Pantay Elementary School</b> (2011 – 2016)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="certModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('certModal')">&times;</span>
+      <h2>CERTIFICATIONS</h2>
+      <ul>
+        <li>Cisco Certified Network Associate (CCNA)</li>
+        <li>Lean Six Sigma White Belt</li>
+        <li>Lean Six Sigma Yellow Belt</li>
+        <li>Data Biz Conference</li>
+        <li>Bitcoin Conference</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('projModal')">&times;</span>
+      <h2>PROJECTS</h2>
+      <ul>
+        <li>Developed a Gym Scheduling and Appointment System for a gym business, including features for member registration, class booking, and schedule management.</li>
+      </ul>
+    </div>
+  </div>
+
+ <script>
+  function openModal(id) {
+    document.getElementById(id).classList.add("active");
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove("active");
+  }
+</script>
+
+</body>
+</html>
