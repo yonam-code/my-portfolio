@@ -277,3 +277,97 @@ ul {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+
+.email-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.email-btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.collab-section {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.collab-icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.collab-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: black;
+}
+
+.collab-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+.collab-btn {
+  display: inline-block;
+  margin: 20px 0;
+  background: black;
+  color: white;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.collab-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.note {
+  font-size: 13px;
+  color: #777;
+}
+
+.collab-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
