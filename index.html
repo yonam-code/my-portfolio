@@ -12,7 +12,7 @@
   <!-- NAVIGATION BAR -->
   <nav>
     <button onclick="openModal('educationModal')">Education</button>
-    <button onclick="openModal('certModal')">Certifications</button>
+    <button onclick="openModal('certModal')">Certificates & Certifications</button>
     <button onclick="openModal('projModal')">Projects</button>
   </nav>
 
@@ -113,7 +113,7 @@
       <!-- REFERENCE -->
       <h2>REFERENCE</h2>
       <p>
-        Justmyr Gutierrez – Instructor at BSU LIPA TNEU  
+        Justmyr Guiterrez – Instructor at BSU LIPA TNEU  
         📞 09184205940
       </p>
 
@@ -135,29 +135,33 @@
   </div>
 
   <div id="certModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('certModal')">&times;</span>
-      <h2>CERTIFICATIONS</h2>
-      <ul>
-        <li>Lean Six Sigma White Belt</li>
-        <li>Lean Six Sigma Yellow Belt</li>
-        <li>Data Biz Conference</li>
-        <li>Bitcoin Conference</li>
-      </ul>
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('certModal')">&times;</span>
+    <h2>CERTIFICATES & CERTIFICATIONS</h2>
+
+    <div class="cert-gallery">
+      <img src="WHITE.png" alt="Lean Six Sigma White Belt">
+      <img src="YELLOW.png" alt="Lean Six Sigma Yellow Belt">
+      <img src="databiz.jpg" alt="Data Biz Conference">
+      <img src="databiz2.jpg" alt="Bitcoin Conference">
+      <img src="JPCS.png" alt="Junior Philippine Computer Society">
     </div>
   </div>
+</div>
+
 
   <div id="projModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal('projModal')">&times;</span>
-      <h2>PROJECTS</h2>
-      <ul>
-        <li>Developed a Gym Scheduling and Appointment System for a gym business, including features for member registration, class booking, and schedule management.</li>
-      </ul>
-    </div>
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('projModal')">&times;</span>
+    <h2>PROJECTS</h2>
+    <ul>
+      <li>Developed a Gym Scheduling and Appointment System for a gym business, including features for member registration, class booking, and schedule management.</li>
+    </ul>
+    <video class="project-video" src="examplevid.mp4" controls></video>
   </div>
+</div>
 
- <script>
+<script>
   function openModal(id) {
     document.getElementById(id).classList.add("active");
   }
@@ -165,8 +169,18 @@
   function closeModal(id) {
     document.getElementById(id).classList.remove("active");
   }
+
+  // ✅ Close modal when clicking outside modal-content
+  window.addEventListener("click", function(event) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(function(modal) {
+      if (event.target === modal) {
+        modal.classList.remove("active");
+      }
+    });
+  });
 </script>
+
 
 </body>
 </html>
-
