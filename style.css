@@ -371,3 +371,50 @@ ul {
   color: black;
 }
 
+
+/* Make the Certificates modal wider */
+#certModal .modal-content {
+  max-width: 1200px;   /* give more room */
+  width: 95%;
+}
+
+/* Certificates Gallery - 2 per row */
+.cert-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* force 2 columns */
+  gap: 30px; /* more spacing between images */
+  margin-top: 20px;
+  justify-items: center; /* center images inside cells */
+}
+
+.cert-gallery img {
+  width: 100%;
+  max-width: 500px;   /* allow them to grow bigger */
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-gallery img:hover {
+  transform: scale(1.08);
+}
+
+/* Make the Projects modal wider */
+#projModal .modal-content {
+  max-width: 1000px;   /* wider than default 450px */
+  width: 95%;          /* responsive */
+}
+
+/* Project Video Styling */
+.project-video {
+  width: 100%;          /* take full modal width */
+  max-width: 900px;     /* keep it balanced inside */
+  height: auto;         /* maintain aspect ratio */
+  margin: 20px auto;    /* center the video */
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
